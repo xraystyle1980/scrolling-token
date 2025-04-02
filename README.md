@@ -1,72 +1,70 @@
-# Trice Design Portfolio
+# Scrolling Token Demo
 
-<div align="center">
-  <img src=".github/trice-logo-skewed.png" alt="Trice Design Portfolio Preview" width="50%">
-</div>
-
-A modern, responsive portfolio website built with Next.js 14, showcasing my work as a Product Designer and Creative Engineer.
+A modern web demo showcasing a 3D token that responds to scroll interactions using Three.js and GSAP. Built with Next.js and TypeScript.
 
 ## Features
 
-- 🎨 Bold, maximalist design with dynamic visuals
-- ⚡️ Built with Next.js 14 and React
-- 📱 Fully responsive
-- 🎭 Custom animations and transitions
-- 🌟 Interactive 3D elements with Three.js
-- 🎯 Case studies and project showcases
-- 🔍 SEO optimized
+- 🎨 Interactive 3D token model using Three.js
+- 📜 Smooth scroll-based animations powered by GSAP
+- 🎭 Dynamic lighting and post-processing effects
+- 📱 Responsive design for all devices
+- ⚡ Built with Next.js for optimal performance
 
 ## Tech Stack
 
-- Next.js 14
-- React
-- TypeScript
-- Three.js / React Three Fiber
-- CSS Modules
-- GSAP for animations
+- **Framework:** Next.js 14
+- **3D Graphics:** Three.js, React Three Fiber, Drei
+- **Animations:** GSAP, SplitType
+- **Styling:** CSS Modules
+- **Type Safety:** TypeScript
+- **Development:** ESLint, PostCSS, Autoprefixer
 
 ## Getting Started
 
-First, install the dependencies:
+1. Clone the repository:
+```bash
+git clone [your-repo-url]
+cd scrolling-token
+```
 
+2. Install dependencies:
 ```bash
 npm install
-# or
-yarn install
 ```
 
-Then, run the development server:
-
+3. Run the development server:
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Project Structure
 
 ```
-├── app/                  # Next.js 14 app directory
-├── components/          # React components
-│   ├── sections/       # Page sections
-│   └── ui-components/  # Reusable UI components
-├── public/             # Static assets
-└── styles/            # Global styles and CSS modules
+scrolling-token/
+├── app/                    # Next.js app directory
+│   ├── components/         # React components
+│   ├── fonts/              # Custom fonts
+│   └── globals.css         # Global styles
+├── components/             # Shared components
+│   ├── sections/           # Page sections
+│   ├── ui-components/      # UI elements
+│   └── utils/              # Utility components
+├── public/                 # Static assets
+│   ├── fonts/              # Font files
+│   ├── images/             # Image assets
+│   └── models/             # 3D models
+└── styles/                 # CSS modules
 ```
 
-## Learn More About Next.js
+## Development
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-## Deployment
-
-This site is deployed on Vercel. For more information about deploying Next.js apps, check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
 ## License
 
-This project is licensed under the MIT License.
+MIT
