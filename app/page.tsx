@@ -5,10 +5,14 @@ import dynamic from 'next/dynamic';
 import sharedStyles from '@/styles/shared.module.css';
 import HeroAbout from '@/components/sections/HeroAbout';
 import { useEffect } from 'react';
-import gsap from 'gsap';
-import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+import { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
+import Scene3D from './Scene3D';
+import { gsap } from 'gsap-trial';
+import { ScrollToPlugin } from 'gsap-trial/ScrollToPlugin';
 import ContactMe from '@/components/sections/ContactMe';
 
+// Register plugins
 gsap.registerPlugin(ScrollToPlugin);
 
 // Define interface for Scene3D props
@@ -18,7 +22,7 @@ interface Scene3DProps {
 }
 
 // Dynamically import Three.js components with no SSR
-const Scene3D = dynamic<Scene3DProps>(() => import('./Scene3D'), {
+const Scene3DComponent = dynamic<Scene3DProps>(() => import('./Scene3D'), {
   ssr: false,
 });
 

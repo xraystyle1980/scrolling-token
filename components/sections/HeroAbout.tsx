@@ -2,9 +2,9 @@
 
 import { useRef, useEffect, Suspense, useState } from 'react';
 import clsx from 'clsx';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
+import { gsap } from 'gsap-trial';
+import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
+import { MotionPathPlugin } from 'gsap-trial/MotionPathPlugin';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Environment } from '@react-three/drei';
 import TokenFace from '../3d/TokenFace';
@@ -13,10 +13,8 @@ import sharedStyles from '@/styles/shared.module.css';
 import { Group } from 'three';
 import { Icon } from '@/components/icons/Icon';
 
-
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
-}
+// Register plugins
+gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
 function RotatingToken({ groupRef, onFloatAnimCreated, initialScale }: { 
   groupRef: React.RefObject<Group>;

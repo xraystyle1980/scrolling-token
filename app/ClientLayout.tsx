@@ -1,16 +1,16 @@
 'use client';
 
 import { useRef, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
+import { Analytics } from '@vercel/analytics/react';
 import clsx from 'clsx';
 import styles from './ClientLayout.module.css';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
+import { gsap } from 'gsap-trial';
+import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
+import { MotionPathPlugin } from 'gsap-trial/MotionPathPlugin';
 
-// Register GSAP plugins
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
-}
+// Register plugins
+gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
   // Disable all GSAP-specific hooks and logic

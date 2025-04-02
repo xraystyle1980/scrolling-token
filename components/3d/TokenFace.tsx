@@ -3,7 +3,7 @@
 import { useGLTF } from '@react-three/drei'
 import { useRef, useEffect } from 'react'
 import { Group } from 'three'
-import gsap from 'gsap'
+import { gsap } from 'gsap-trial'
 import { ThreeEvent } from '@react-three/fiber'
 
 
