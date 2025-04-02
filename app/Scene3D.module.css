@@ -1,0 +1,27 @@
+/* Optional styles for the ID if needed for GSAP ScrollTrigger */
+#retrogrid-section {
+    scroll-snap-align: start; /* Ensures snapping behavior, if applicable */
+    pointer-events: none; /* Same as the wrapper to avoid blocking user interactions */
+}
+
+/* Ensures the section is full-screen and positioned correctly */
+.wrapper {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; 
+    overflow: hidden; 
+    pointer-events: none;
+}
+
+.canvas {
+    display: block;
+    top: 0;
+    left: 0; 
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover; 
+}

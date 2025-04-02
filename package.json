@@ -1,0 +1,41 @@
+{
+  "name": "nextjs-landing-page",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.1",
+    "@react-three/drei": "^9.92.7",
+    "@react-three/fiber": "^8.15.12",
+    "@react-three/postprocessing": "^2.16.3",
+    "@react-three/rapier": "^1.2.1",
+    "@types/stats.js": "^0.17.3",
+    "@types/three": "^0.159.0",
+    "@vercel/analytics": "^1.4.1",
+    "clsx": "^2.1.1",
+    "gsap": "npm:@gsap/shockingly@^3.12.7",
+    "next": "^14.2.23",
+    "pixelarticons": "^1.8.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sharp": "^0.33.5",
+    "split-type": "^0.3.4",
+    "stats.js": "^0.17.0",
+    "three": "^0.171.0"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "@types/node": "20.3.1",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^9.17.0",
+    "postcss": "^8.4.31",
+    "typescript": "5.1.3"
+  }
+}

@@ -1,0 +1,56 @@
+.loadingScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-background);
+  z-index: 100;
+  pointer-events: none;
+}
+
+.loadingText {
+  font-family: var(--font-force);
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: var(--color-primary);
+  letter-spacing: -0.05em;
+  display: flex;
+  transform: skewY(-15deg) skewX(0deg);
+  transform-origin: center;
+}
+
+.letter {
+  display: inline-block;
+  transform: translateY(var(--travel-distance, 20px));
+  opacity: 0;
+  transform-origin: center;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(var(--travel-distance, 20px));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loadingSvg {
+  margin-bottom: 1rem;
+}
+
+.circle {
+  animation: spin 1s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+} 

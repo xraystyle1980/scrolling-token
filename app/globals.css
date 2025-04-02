@@ -1,0 +1,332 @@
+/* Modern CSS Reset */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: var(--line-height-md);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-space);
+  overscroll-behavior: none;
+}
+
+/* Make images easier to work with */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements */
+ul, ol {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* iOS Text Shadow Fix */
+@supports (-webkit-touch-callout: none) {
+  * {
+    text-shadow: none !important;
+    -webkit-text-stroke: 0 !important;
+  }
+}
+
+html {
+  overscroll-behavior: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    /* scroll-behavior-duration: 1200ms;
+    scroll-behavior-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); */
+  }
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Base margins for headings and paragraphs */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-xs);
+}
+
+p {
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Responsive Typography and Spacing */
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: var(--font-size-7xl);
+  }
+  h2 {
+    font-size: var(--font-size-6xl);
+  }
+  h3 {
+    font-size: var(--font-size-5xl);
+  }
+  h4 {
+    font-size: var(--font-size-4xl);
+  }
+  h5 {
+    font-size: var(--font-size-3xl);
+  }
+  h6 {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Typography */
+  h1 {
+    font-size: var(--font-size-6xl);
+  }
+  h2 {
+    font-size: var(--font-size-5xl);
+  }
+  h3 {
+    font-size: var(--font-size-4xl);
+  }
+  h4 {
+    font-size: var(--font-size-3xl);
+  }
+  h5 {
+    font-size: var(--font-size-2xl);
+  }
+  h6 {
+    font-size: var(--font-size-xl);
+  }
+  .lead {
+    font-size: var(--font-size-lg);
+  }
+
+  /* Spacing */
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: var(--spacing-xs);
+    margin-bottom: calc(var(--spacing-xs) / 2);
+  }
+  p {
+    margin-bottom: calc(var(--spacing-xs) / 2);
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: var(--font-size-5xl);
+  }
+  h2 {
+    font-size: var(--font-size-4xl);
+  }
+  h3 {
+    font-size: var(--font-size-3xl);
+  }
+  h4 {
+    font-size: var(--font-size-2xl);
+  }
+  h5 {
+    font-size: var(--font-size-xl);
+  }
+  h6 {
+    font-size: var(--font-size-lg);
+  }
+  p {
+    font-size: var(--font-size-sm);
+  }
+  .lead {
+    font-size: var(--font-size-md);
+  }
+}
+
+/* CSS Variables */
+:root {
+  /* Define global breakpoints for consistency */
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1200px;
+
+  /* Colors */
+  --color-background: #1d2329;
+  --color-background-light: #D9D9D9;
+  --color-dark: #1d2329;
+  --color-white: #e9e9e9;
+  --color-text: #161616;
+
+  --color-primary--1: #FF1A8C;
+  --color-primary: #F39;
+  --color-primary-1: #FF4DA6;
+
+  --color-accent-dark: #596a7b;
+  --color-accent-light: #96A1AB;
+  --color-border: #000;
+
+  /* Typography */ 
+  /* These variables are set by Next.js Font Module */
+  --font-force: var(--font-force);
+  --font-space: var(--font-space);
+
+  /* Base Font Size */
+  --font-size-base: 1rem;
+  
+  /* Scale using Major Third (1.25) */
+  --font-size-xs: 0.8rem;   /* 12.8px - Small captions */
+  --font-size-sm: 1rem;     /* 16px - Base text */
+  --font-size-md: 1.25rem;  /* 20px - Larger body text */
+  --font-size-lg: 1.563rem; /* 25px - Small subheadings */
+  --font-size-xl: 1.953rem; /* 31px - Section headers */
+  --font-size-2xl: 2.441rem; /* 39px - Subtitles */
+  --font-size-3xl: 3.052rem; /* 49px - H6 */
+  --font-size-4xl: 3.815rem; /* 61px - H5 */
+  --font-size-5xl: 4.768rem; /* 76px - H4 */
+  --font-size-6xl: 5.96rem;  /* 95px - H3 */
+  --font-size-7xl: 7.451rem; /* 119px - H2 */
+  --font-size-8xl: 9.314rem; /* 149px - H1 (Small) */
+  --font-size-9xl: 11.642rem; /* 186px - H1 (Large) */
+  --font-size-10xl: 14.552rem; /* 232px - Jumbo Headline */
+
+  /* Line Heights */
+  --line-height-xs: 0.9;
+  --line-height-sm: 1.3;
+  --line-height-md: 1.5;
+  --line-height-lg: 1.75;
+
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.05em;
+
+  /* Spacing */
+  --spacing-xxs: 0.5rem;
+  --spacing-xs: 1rem;
+  --spacing-sm: 2rem;
+  --spacing-md: 3rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+  --spacing-xxl: 9rem;
+
+  /* Responsive Spacing */
+  --spacing-md-laptop: 2.5rem;
+  --spacing-md-tablet: 2rem;
+  --spacing-md-mobile: 1.5rem;
+
+  /* Layout */
+  /* --max-width: 1400px; */
+  --border-width-sm: 2px;
+  --border-width-md: 4px;
+  --border-width-lg: 8px;
+  --border-width-xl: 12px;
+  --border-width-xxl: 16px;
+  --border-radius: 1rem;
+  --border-radius-mobile: 0.5rem;
+
+  /* Effects */
+  --shadow-lg: -12px -12px 0 var(--color-border);
+  --shadow-md: -8px -8px 0 var(--color-border);
+  --shadow-sm: -2px -2px 0 var(--color-border);
+  --shadow-none: 0 0 0 var(--color-border);
+}
+
+/* Headings */
+h1 {
+  font-size: var(--font-size-8xl);
+  font-weight: bold;
+  line-height: var(--line-height-sm);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+h2 {
+  font-size: var(--font-size-7xl);
+  font-weight: bold;
+  line-height: var(--line-height-sm);
+}
+
+h3 {
+  font-size: var(--font-size-6xl);
+  font-weight: bold;
+  line-height: var(--line-height-md);
+}
+
+h4 {
+  font-size: var(--font-size-5xl);
+  font-weight: bold;
+  line-height: var(--line-height-md);
+}
+
+h5 {
+  font-size: var(--font-size-4xl);
+  font-weight: bold;
+  line-height: var(--line-height-lg);
+}
+
+h6 {
+  font-size: var(--font-size-3xl);
+  font-weight: bold;
+  line-height: var(--line-height-lg);
+}
+
+/* Body Text */
+p {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-md);
+}
+
+.lead {
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  line-height: var(--line-height-lg);
+}
+
+/* Captions & Small Text */
+.caption {
+  font-size: var(--font-size-xs);
+  font-weight: 400;
+  line-height: var(--line-height-md);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+/* Buttons */
+.button {
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+/* Utility */
+.muted {
+  opacity: 0.6;
+}

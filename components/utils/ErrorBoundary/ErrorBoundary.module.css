@@ -1,0 +1,16 @@
+/* filepath: /Users/trice/Documents/Trice Design/Sites/trice-design-portfolios/td-portfolio-5/components/utils/ErrorBoundary/ErrorBoundary.module.css */
+.errorMessage {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.retryButton {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background: #F39;
+  border: none;
+  border-radius: 0.5rem;
+  color: #FFF;
+  cursor: pointer;
+  font-family: var(--font-cooper); /* Use the font variable */
+}

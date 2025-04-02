@@ -1,0 +1,20 @@
+.backToTop {
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(1rem);
+  transition: all 0.65s ease;
+  pointer-events: auto;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .backToTop {
+    transform: translateY(0.75rem);
+  }
+} 
