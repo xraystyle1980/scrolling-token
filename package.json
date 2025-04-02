@@ -10,7 +10,6 @@
     "sandbox": "next dev --port 3000"
   },
   "dependencies": {
-    "@gsap/react": "^2.1.1",
     "@react-three/drei": "^9.92.7",
     "@react-three/fiber": "^8.15.12",
     "@react-three/postprocessing": "^2.16.3",
