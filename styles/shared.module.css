@@ -352,14 +352,6 @@ a.link {
   font-weight: 900;
 }
 
-/* Button Modifiers */
-.half {
-  width: 50%;
-}
-.quarter {
-  width: 25%;
-}
-
 /* Mobile Adjustments */
 @media (max-width: 768px) {
   .buttonIcon {
@@ -371,9 +363,72 @@ a.link {
     font-size: var(--font-size-md);
     padding: var(--spacing-xxs) var(--spacing-xs);
   }
+
+  .container {
+    padding: 0 var(--spacing-md-laptop);
+  }
+
+  .containerSmall {
+    padding: 0 var(--spacing-md-mobile);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .paddingTopBottom {
+    padding: var(--spacing-md) 0 var(--spacing-md);
+  }
+
+  .paddingBottom {
+    padding-bottom: var(--spacing-xs);
+  }
+
+  .contentContainer {
+    padding: 0;
+  }
+
+  .textBase.large {
+    font-size: var(--font-size-md);
+  }
+
+  .textBase.larger {
+    font-size: var(--font-size-md);
+  }
+
+  .sectionHeading {
+    font-size: var(--font-size-5xl);
+  }
+
+  .sectionTitle {
+    margin: var(--spacing-xxs) 0;
+    font-size: var(--font-size-4xl);
+  }
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding: 0;
+  }
+
+  .containerSmall {
+    max-width: 100%;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .sectionHeading {
+    font-size: var(--font-size-4xl);
+  }
+
+  .sectionTitle {
+    font-size: var(--font-size-2xl);
+  }
+
+  .paddingTopBottom {
+    padding: var(--spacing-sm) 0 var(--spacing-sm);
+  }
+
+  .paddingBottom {
+    padding-bottom: var(--spacing-xs);
+  }
+
   .primaryButton {
     font-size: var(--font-size-sm);
   }

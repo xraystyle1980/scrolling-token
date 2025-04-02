@@ -23,7 +23,7 @@ export default function ContactMe({ id = 'connect' }: ContactMeProps) {
           <h5 className={clsx(styles.subsectionSubTitle, sharedStyles.colorWhite)}>Working on a project?</h5>
           <p className={clsx(sharedStyles.textBase, sharedStyles.large, sharedStyles.colorWhite)}>Drop me a line and let's build cool shit.</p>
 
-          <a onClick={handleEmailClick} href="mailto:matt@trice.design" className={clsx(sharedStyles.primaryButton, sharedStyles.buttonBase, sharedStyles.half)}>
+          <a onClick={handleEmailClick} href="mailto:matt@trice.design" className={clsx(sharedStyles.primaryButton, sharedStyles.buttonBase)} style={{ width: '50%' }}>
             <span>matt@trice.design</span>
             <span><Icon name="mail-arrow-right" className={sharedStyles.buttonIcon} /></span>
           </a>

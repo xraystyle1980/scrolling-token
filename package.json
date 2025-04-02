@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-landing-page",
+  "name": "scrolling-token",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -18,7 +18,7 @@
     "@types/three": "^0.159.0",
     "@vercel/analytics": "^1.4.1",
     "clsx": "^2.1.1",
-    "gsap": "npm:@gsap/shockingly@^3.12.7",
+    "gsap": "^3.12.7",
     "next": "^14.2.23",
     "pixelarticons": "^1.8.0",
     "react": "18.2.0",
@@ -37,5 +37,17 @@
     "eslint": "^9.17.0",
     "postcss": "^8.4.31",
     "typescript": "5.1.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
