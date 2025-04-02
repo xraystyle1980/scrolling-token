@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sandbox": "next dev --port 3000"
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
@@ -49,5 +50,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "sandbox": {
+    "template": "next",
+    "container": {
+      "node": "18"
+    },
+    "hardReloadOnChange": false,
+    "infiniteLoopProtection": true
   }
 }
