@@ -39,9 +39,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# npm config with sensitive data
-.npmrc
-
 # IDE specific files
 .idea
 .vscode
