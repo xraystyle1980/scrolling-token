@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://trice.design'),
-  title: 'Matt Trice | ATL Product Designer, Design Leader, Creative Engineer',
-  description: 'ATL-based Senior Product Designer, Design Leader, and Creative Engineer. I have a track record of helping startups launch, leading design teams, and getting a product from zero to one.',
+  metadataBase: new URL('https://scrolling-token.vercel.app/'),
+  title: 'Scrolling Token Demo | Matt Trice Design',
+  description: 'Matt Trice | Senior Product Designer, Design Systems, UX Engineering.',
   keywords: [
     'Product Design',
     'Design Systems', 
@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     'Design Engineer',
     'Creative Engineer',
     'Startup Design',
+    'UX Engineering',
     'Documentation Design',
     'Marketing Design',
     'Blockchain Design',
@@ -27,21 +28,20 @@ export const metadata: Metadata = {
   robots: 'index, follow',
   
   // Manifest and icons
-  manifest: '/manifest.json',
+  manifest: '/favicon/site.webmanifest',
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: '48x48', type: 'image/x-icon' },
-      { url: '/icon.ico', sizes: '48x48', type: 'image/x-icon' },
-      { url: '/favicon.png', sizes: '192x192', type: 'image/png' },
-      { url: '/icon.png', sizes: '192x192', type: 'image/png' },
-      { url: '/favicon-512x512.png', sizes: '512x512', type: 'image/png' }
+      { url: '/favicon/favicon.ico', sizes: '48x48', type: 'image/x-icon' },
+      { url: '/favicon/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+      { url: '/favicon/web-app-manifest-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/favicon/web-app-manifest-512x512.png', sizes: '512x512', type: 'image/png' }
     ],
     shortcut: [
-      { url: '/favicon.ico', sizes: '48x48', type: 'image/x-icon' },
-      { url: '/icon.ico', sizes: '48x48', type: 'image/x-icon' }
+      { url: '/favicon/favicon.ico', sizes: '48x48', type: 'image/x-icon' }
     ],
     apple: [
-      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }
+      { url: '/favicon/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }
     ]
   },
 
