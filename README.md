@@ -27,17 +27,26 @@ git clone [your-repo-url]
 cd scrolling-token
 ```
 
-2. Install dependencies:
+2. Set up GSAP configuration:
+```bash
+# Copy the example .npmrc file
+cp .npmrc.example .npmrc
+
+# Set your GSAP token in the .npmrc file
+# Replace ${TOKEN} with your actual GSAP token
+```
+
+3. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Run the development server:
+4. Run the development server:
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Project Structure
 

@@ -40,12 +40,11 @@ yarn-error.log*
 next-env.d.ts
 
 # npm config with sensitive data
-# .npmrc
+.npmrc
 
 # IDE specific files
 .idea
 .vscode
 *.swp
 *.swo
-.npmrc
 gsap-bonus.tgz

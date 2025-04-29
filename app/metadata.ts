@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://trice.design'),
   title: 'Matt Trice | ATL Product Designer, Design Leader, Creative Engineer',
   description: 'ATL-based Senior Product Designer, Design Leader, and Creative Engineer. I have a track record of helping startups launch, leading design teams, and getting a product from zero to one.',
   keywords: [
