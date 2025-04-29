@@ -3,8 +3,8 @@
 import { useRef, useEffect, useState } from 'react';
 import { Group } from 'three';
 import TokenFace from './TokenFace';
-import { gsap } from 'gsap-trial';
-import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 export default function ScrollingTokens() {
   const tokensRef = useRef<(Group | null)[]>([]);

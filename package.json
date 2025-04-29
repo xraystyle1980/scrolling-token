@@ -18,7 +18,7 @@
     "@types/three": "^0.159.0",
     "@vercel/analytics": "^1.4.1",
     "clsx": "^2.1.1",
-    "gsap-trial": "^3.12.7",
+    "gsap": "npm:@gsap/shockingly",
     "next": "^14.2.23",
     "pixelarticons": "^1.8.0",
     "react": "18.2.0",

@@ -5,9 +5,9 @@ import { usePathname } from 'next/navigation';
 import { Analytics } from '@vercel/analytics/react';
 import clsx from 'clsx';
 import styles from './ClientLayout.module.css';
-import { gsap } from 'gsap-trial';
-import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
-import { MotionPathPlugin } from 'gsap-trial/MotionPathPlugin';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 
 // Register plugins
 gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);

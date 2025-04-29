@@ -1,7 +1,7 @@
 'use client'
 
 import React, { Component, ErrorInfo, ReactNode } from 'react'
-import { gsap } from 'gsap-trial'
+import { gsap } from 'gsap'
 import styles from './ErrorBoundary.module.css';
 
 interface Props {

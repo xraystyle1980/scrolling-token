@@ -6,8 +6,8 @@ import RetroGrid from '@/components/3d/RetroGrid'
 import { useRef, useState, useEffect } from 'react'
 import { Vector3, MathUtils, PerspectiveCamera as ThreePerspectiveCamera } from 'three'
 import styles from './Scene3D.module.css'
-import { gsap } from 'gsap-trial'
-import { ScrollTrigger } from 'gsap-trial/ScrollTrigger'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 

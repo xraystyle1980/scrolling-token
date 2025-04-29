@@ -8,8 +8,8 @@ import { useEffect } from 'react';
 import { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
 import Scene3D from './Scene3D';
-import { gsap } from 'gsap-trial';
-import { ScrollToPlugin } from 'gsap-trial/ScrollToPlugin';
+import { gsap } from 'gsap';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import ContactMe from '@/components/sections/ContactMe';
 
 // Register plugins
