@@ -72,7 +72,7 @@ export default function Scene3D({ scroll }: Scene3DProps) {
       start: 'top top',
       end: '+=24000', // Increased from 16000 to 24000 for longer scroll
       scrub: 3,      // Changed from true to 3 for smoother scrolling
-      onUpdate: (self) => {
+      onUpdate: (self: ScrollTrigger) => {
         setScrollProgress(self.progress)
       },
     })

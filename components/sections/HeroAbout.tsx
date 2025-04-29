@@ -103,7 +103,9 @@ function RotatingToken({ groupRef, onFloatAnimCreated, initialScale }: {
       });
 
       // Pass the animation reference up
-      onFloatAnimCreated(floatAnimRef.current);
+      if (floatAnimRef.current) {
+        onFloatAnimCreated(floatAnimRef.current);
+      }
     }
 
     // Cleanup
@@ -230,7 +232,7 @@ export default function HeroAbout() {
         scrub: 6,
         pin: tokenContainerRef.current,
         anticipatePin: 1,
-        onUpdate: (self) => {
+        onUpdate: (self: ScrollTrigger) => {
           if (groupRef.current) {
             const progress = self.progress;
             const easedProgress = gsap.parseEase("power3.inOut")(progress);

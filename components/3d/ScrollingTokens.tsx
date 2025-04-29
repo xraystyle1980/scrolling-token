@@ -111,7 +111,7 @@ export default function ScrollingTokens() {
             end: "top 20%",
             scrub: 1,
             markers: false,
-            onUpdate: (self) => {
+            onUpdate: (self: ScrollTrigger) => {
               tl.progress(self.progress);
             }
           });
@@ -121,7 +121,7 @@ export default function ScrollingTokens() {
 
     return () => {
       // Kill all ScrollTrigger instances first
-      ScrollTrigger.getAll().forEach(st => st.kill());
+      ScrollTrigger.getAll().forEach((st: ScrollTrigger) => st.kill());
       // Then revert the GSAP context
       ctx.revert();
     };
